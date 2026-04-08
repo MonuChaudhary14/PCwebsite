@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Particle from "../Particle";
 import { fetchAllEditorials, getPlatformLabel } from "../../api/editorials";
 import "./Editorials.css";
 
@@ -68,9 +67,6 @@ function EditorialList() {
   return (
     <section className="editorials-page">
       <Container fluid className="editorials-hero">
-        <div className="editorials-particle-layer">
-          <Particle />
-        </div>
         <Container className="editorials-shell">
           <div className="editorials-intro">
             <span className="editorials-kicker">Contest Editorials</span>

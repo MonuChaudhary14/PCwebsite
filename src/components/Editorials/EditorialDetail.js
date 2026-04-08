@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import { Link, useParams } from "react-router-dom";
-import Particle from "../Particle";
 import { fetchEditorialBySlug, getPlatformLabel } from "../../api/editorials";
 import "./Editorials.css";
 
@@ -61,9 +60,6 @@ function EditorialDetail() {
   return (
     <section className="editorials-page">
       <Container fluid className="editorials-hero">
-        <div className="editorials-particle-layer">
-          <Particle />
-        </div>
         <Container className="editorials-shell editorial-detail-shell">
           <Link className="editorials-back-link" to="/editorials">
             ← Back to all editorials
